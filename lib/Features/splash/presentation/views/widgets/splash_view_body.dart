@@ -44,7 +44,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
     animationController.dispose();
     super.dispose();
   }
-/*******  00863bcf-f1fb-4537-a83d-050c61a80994  *******/
+
+  /// *****  00863bcf-f1fb-4537-a83d-050c61a80994  ******
 
   @override
   Widget build(BuildContext context) {
@@ -63,8 +64,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
         AnimationController(vsync: this, duration: const Duration(seconds: 1));
 
     /// The [Tween] represents the animation of the [SlidingText].
-    slideAnimation = Tween<Offset>(begin: const Offset(0, 2), end: Offset(0, 0))
-        .animate(animationController);
+    slideAnimation =
+        Tween<Offset>(begin: const Offset(0, 2), end: const Offset(0, 0))
+            .animate(animationController);
 
     /// Starts the animation of the [SlidingText].
     animationController.forward();
