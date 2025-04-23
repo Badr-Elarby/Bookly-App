@@ -1,10 +1,21 @@
+import 'package:bookly/Features/search/presentation/views/widgets/custom_serach_text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SearchViewBody extends StatelessWidget {
   const SearchViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Padding(
+      padding: EdgeInsets.symmetric(
+        horizontal: 25,
+      ),
+      child: const Column(
+        children: [
+          CustomSerachTextField(),
+        ],
+      ),
+    );
   }
 }
